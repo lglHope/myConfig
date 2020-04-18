@@ -1,2 +1,13 @@
 user:
  username: zhangsan
+
+
+---
+spring:
+  profiles: mac
+MAC_IP: 192.168.31.193
+MAC_PORT: 8080
+eureka:
+  client:
+    service-url:
+      defaultZone: http://${MAC_IP}:${MAC_PORT}/eureka/
